@@ -1,4 +1,4 @@
-<h1> Projeto Pagina de captura.</h1>
+<h1> Projeto Pagina de captura</h1>
 
 
 <p> Este projeto foi desenvolvido com o auxilio do professor afim de colocar em pratica todo o conteudo que foi adquirido durante o modulo de HTML5 e CSS3 intermediario. </p> 
