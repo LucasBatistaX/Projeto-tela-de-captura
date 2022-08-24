@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+header{
+    background-color: #48c5ce;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.title{
+    font-size: 26px;
+
+}
+
+section{
+    padding: 20px; /* este elemento afastou o o select da borda da viewport */
+    background-image: url('../images/people.jpg');
+    background-size: cover; /*O elemento cover faz com que a imagem fique com o tamanho exato da <div>*/
+    overflow: hidden; /*O elemento hidden faz com que a imagem preencha a <div> sem quebrar a imagem*/
+}
+
+.formContainer{
+    width: 250px;
+    background-color: #ffffffbb;
+    padding: 20px;
+    float: right;
+}
+
+h2{
+    font-size: 16px;
+}
+
+.mb{
+    margin-bottom: 15px; 
+}
+input, select{
+    width: 100% ;  /* Esta linha deixa os inputs e os select com 100% do tamanho do block das letras */
+    box-sizing: border-box;  /* Esta linha deixa todos os inputs do mesmo tamanho */
+    padding: 10px;  /*Aumenta o tamanho dos inputs e selects*/
+    border:none ;  /*Retira as bordas negritos ( linhas e volta do input*/
+    margin-bottom: 10px;  /*aplica uma distancia de um input para o outro*/
+}
+
+input[type="submit"]{
+    color: white ;
+    background-color:#48c5ce;
+    font-weight: bold; /* Este elemento "bold" deixa a palavra em "negrito"*/
+}
+
+select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../images/arrow.jpg');
+
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px); /* Esta propriedade permite com que voce posicione a img totalmente no lado direito com 10px de padding dentro do elemento input*/
+    background-position-y: center; /*Esta propriedade centraliza a img no eixo y*/  
+
+   /* background-position: calc(100% - 10px) center; /*Mesma funcao de forma simplificada*/ 
+}
+.picture{
+    width: 160px; /* Alterou o tamanho da image proporcionalmente*/
+}
+
+footer{
+    background-color: #202121;
+    padding: 40px;
+    text-align: center; /* Este elemento deixa a img e o texto centralizados dentro do footer*/
+
+}
+.description{
+    display: inline-block;
+    color: white;
+    width: 40%;
+    margin-left: 40px;
+    text-align: left; /* Este elemento justifica o texto a direita*/
+    
+}
+.description p, .description h3{
+    margin-bottom: 20px;
+}
+.description h3{
+    font-size: 24px;
+
+}
+
+
+@media only screen and (max-width: 800px){
+section{
+    display: flex;
+    justify-content: center;
+       
+}
+.formContainer{
+    width: 500px;
+
+}
+@media only screen and (max-width: 500px){
+.description{
+    width: 300px;
+    margin: 0;
+
+} 
+
+.picture{
+    padding-bottom: 50px;
+}
+
+}
+}
